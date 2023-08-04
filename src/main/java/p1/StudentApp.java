@@ -6,12 +6,14 @@ public class StudentApp {
 	private static Session session;
 
 	public static void main(String[] args) {
-		Student s1=new Student();
-		s1.setName("Suman");
-		s1.setRoll("1");
+//		Student s1=new Student();
+//		s1.setName("Suman");
+//		s1.setRoll("1");
 		
 		HibernateManager hbm = new HibernateManager();
-		hbm.saveObj(s1);
+//		hbm.saveObj(s1);
+//		hbm.readAll();
+		hbm.readSpecific("1");
 	}
 
 }
