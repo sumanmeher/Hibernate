@@ -2,10 +2,16 @@
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="p1.Student" table="Student">
-		<id name="roll" column="roll"></id>
+	<class name="p2.Cricketer" table="Cricketer">
+		<id name="cid" column="cid"></id>
 		<property name="name">
 			<column name="name" />
+		</property>
+		<property name="age">
+			<column name="age" />
+		</property>
+		<property name="country">
+			<column name="country" />
 		</property>
 	</class>
 </hibernate-mapping>

@@ -1,12 +1,10 @@
-package p1;
+package p2;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistryBuilder;
-
-import p2.Cricketer;
 
 public class HibernateManager {
 	private Session session;
@@ -19,9 +17,10 @@ public class HibernateManager {
 		session = sessionFactory.openSession();
 		System.out.println("Connected to pf...");
 	}
-	public void saveObj(Student s1) {
-		Transaction tran=session.beginTransaction();
-		session.save(s1);
+
+	public void saveObj(Cricketer c1) {
+		Transaction tran = session.beginTransaction();
+		session.save(c1);
 		tran.commit();
 		System.out.println("Object saved");
 	}
