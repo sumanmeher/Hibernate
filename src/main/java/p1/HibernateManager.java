@@ -11,7 +11,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistryBuilder;
 
 public class HibernateManager {
-	private Session session;
+	public static Session session;
 
 	public HibernateManager() {
 		Configuration configuration = new Configuration().configure("hibernate.cfg.xml"); // connects to cfg
