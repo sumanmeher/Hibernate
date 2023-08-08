@@ -19,5 +19,7 @@
       <mapping resource="Address.hbm.xml"/>
       <mapping resource="Book.hbm.xml"/>
       <mapping resource="Publisher.hbm.xml"/>
+      <mapping resource="Student1.hbm.xml"/>
+      <mapping resource="Course.hbm.xml"/>
 </session-factory>
 </hibernate-configuration>
